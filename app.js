@@ -9,12 +9,12 @@ function validate() {
       document.forms["frs"]["NRP"].focus();
       return false;
     }
-    if (document.forms["form"]["Email"].value == "") {
+    if (document.forms["frs"]["Email"].value == "") {
       alert("Email tidak boleh kosong!");
-      document.forms["form"]["Email"].focus();
+      document.forms["frs"]["Email"].focus();
       return false;
     }
-    if (document.forms["frs"]["matkul"].selectedIndex < 1) {
+    if (document.forms["frs"]["matkul"].value == "0") {
       alert("Harap memilih matkul!");
       document.forms["frs"]["matkul"].focus();
       return false;
@@ -24,14 +24,14 @@ function validate() {
       document.forms["frs"]["dosen"].focus();
       return false;
     }
-    if (document.forms["form"]["faculty"].selectedIndex < 1) {
+    if (document.forms["frs"]["faculty"].selectedIndex < 1) {
       alert("Harap memilih fakultas!");
-      document.forms["form"]["faculty"].focus();
+      document.forms["frs"]["faculty"].focus();
       return false;
   }
-  if (document.forms["form"]["department"].selectedIndex < 1) {
+  if (document.forms["frs"]["department"].selectedIndex < 1) {
       alert("Harap memilih departemen!");
-      document.forms["form"]["department"].focus();
+      document.forms["frs"]["department"].focus();
       return false;
   }
 }
