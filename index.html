@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form.ae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+</head>
+<body>
+    <section>
+        <div class="logo"><h1>Formulir Mahasiswa</h1></div>
+        <form name="frs" onsubmit="return validate()" action="https://my.its.ac.id/" method="post">
+            <div class="title"><a>Nama</a></div>
+            <input maxlength="50" minlength="1" type="text" name="Nama" placeholder="Nama Lengkap">
+
+            <div class="title"><a>NRP</a></div>
+            <input maxlength="20" minlength="10" type="nrp" name="NRP" placeholder="50xxxxxxxx">
+
+            <div class="title"><a>Email</a></div>
+            <input maxlength="30" minlength="10" type="email" name="Email" placeholder="example@gmail.com">
+
+            <div class="title"><a>Mata Kuliah</a></div>
+            <select name="matkul" class="form-control">
+                <option value="0">Pilih Mata Kuliah</option>
+                <option value="1">Agama</option>
+                <option value="2">Aljabar Linier</option>
+                <option value="3">Aplikasi Teknologi dan Transformasi Digital</option>
+                <option value="4">Bahasa Indonesia</option>
+                <option value="5">Bahasa Inggris</option>
+                <option value="6">Dasar Pemrograman</option>
+                <option value="7">Etika Profesi</option>
+                <option value="8">Grafika Komputer</option>
+                <option value="9">Interaksi Manusia dan Komputer</option>
+                <option value="10">Jaringan Komputer</option>
+                <option value="11">Kalkulus 1</option>
+                <option value="12">Kalkulus 2</option>
+                <option value="13">Keamanan Informasi</option>
+                <option value="14">Kerja Praktik</option>
+                <option value="15">Kewarganegaraan</option>
+                <option value="16">Kewirausahaan Berbasis Teknologi</option>
+                <option value="17">Komputasi Numerik</option>
+                <option value="18">Konsep Kecerdasan Artifisial</option>
+                <option value="19">Konsep Pengembangan Perangkat Lunak</option>
+                <option value="20">Manajemen Basis Data</option>
+                <option value="21">Mata Kuliah Pengayaan</option>
+                <option value="22">Matematika Diskrit</option>
+                <option value="23">Organisasi Komputer</option>
+                <option value="24">Otomata</option>
+                <option value="25">Pancasila</option>
+                <option value="26">Pembelajaran Mesin</option>
+                <option value="27">Pemodelan dan Simulasi</option>
+                <option value="28">Pemrograman Berbasis Kerangka Kerja</option>
+                <option value="29">Pemrograman Berorientasi Objek</option>
+                <option value="30">Pemrograman Jaringan</option>
+                <option value="31">Pemrograman Perangkat Bergerak</option>
+                <option value="32">Pemrograman Web</option>
+                <option value="33">Pengenalan Teknologi Elektro dan Informatika Cerdas</option>
+                <option value="34">Perancangan Perangkat Lunak</option>
+                <option value="35">Perancangan dan Analisis Algoritma</option>
+                <option value="36">Pra-Tugas Akhir</option>
+                <option value="37">Probabilitas dan Statistik</option>
+                <option value="38">Rekayasa Sistem Berbasis Pengetahuan</option>
+                <option value="39">Sistem Basis Data</option>
+                <option value="40">Sistem Digital</option>
+                <option value="41">Sistem Operasi</option>
+                <option value="42">Struktur Data</option>
+                <option value="43">Teori Graf</option>
+                <option value="44">Tugas Akhir</option>
+              </select>
+
+              <div class="title"><a>Nama Dosen</a></div>
+              <select name="dosen" class="form-control">
+                <option value="0">Pilih Dosen</option>
+                <option value="1">Ir. Siti Rochimah, MT., Ph.D.</option>
+                <option value="2">Daniel Oranova Siahaan, S.Kom., M.Sc. PD.Eng.</option>
+                <option value="3">Sarwosri, S.Kom., MT.</option>
+                <option value="4">Dr. Umi Laili Yuhana S.Kom., M.Sc.</option>
+                <option value="5">Rizky Januar Akbar, S.Kom., M.Eng.</option>
+                <option value="6">KBJ (Komputasi Berbasis Jaringan)</option>
+                <option value="7">Prof. Tohari Ahmad, S.Kom., M.IT., Ph.D.</option>
+                <option value="8">Bagus Jati Santoso, S.Kom., Ph.D.</option>
+                <option value="9">Hudan Studiawan, S.Kom., M.Kom., Ph.D.</option>
+                <option value="10">Dr. Baskoro Adi P., S.Kom.,M.Kom.</option>
+                <option value="11">Ary Mazharuddin Shiddiqi, S.Kom., M.Comp.Sc., Ph.D</option>
+                <option value="12">KCV (Komputasi Cerdas Visi)</option>
+                <option value="13">Dr. Eng. Nanik Suciati, S.Kom., M.Kom.</option>
+                <option value="14">Prof. Dr. Eng. Chastine Fatichah, S.Kom., M.Kom.</option>
+                <option value="15">Prof. Ir. Handayani Tjandrasa, M.Sc., Ph.D.</option>
+                <option value="16">Prof. Dr. Agus Zainal Arifin, S.Kom., M.Kom.</option>
+                <option value="17">Dini Adni Navastara, S.Kom., M.Sc.</option>
+                <option value="18">AJK (Arsitektur dan Jaringan Komputer)</option>
+                <option value="19">Dr. Wahyu Suadi, S.Kom, M.Kom.</option>
+                <option value="20">Dr. Radityo Anggoro, S.Kom., M.Sc.</option>
+                <option value="21">Prof.Ir. Supeno Djanali, M.Sc Ph.D.</option>
+                <option value="22">Royyana Muslim Ijtihadie, S.Kom.,M.Kom., Ph.D</option>
+                <option value="23">GIGa (Grafika, Interaksi dan Game)</option>
+                <option value="24">Imam Kuswardayan, S.Kom., MT.</option>
+                <option value="25">Dr. Eng. Darlis Herumurti, S.Kom., M.Kom</option>
+                <option value="26">Dr. Anny Yuniarti, S.Kom., M.Comp.Sc.</option>
+                <option value="27">Wijayanti Nurul Khotimah, S.Kom., M.Sc.</option>
+                <option value="28">Hadziq Fabroyir, S.Kom., Ph.D.</option>
+                <option value="29">Siska Arifiani, S.Kom., M.Kom.</option>
+                <option value="30">AP (Algoritma Pemrograman)</option>
+                <option value="31">Dr. Yudhi Purwananto, S.Kom., M.Kom.</option>
+                <option value="32">Dr. Diana Purwitasari, S.Kom., M.Sc.</option>
+                <option value="33">Ir. F.X. Arunanto, M.Sc.</option>
+                <option value="34">Rully Soelaiman, S.Kom,M.Kom.</option>
+                <option value="35">Dwi Sunaryono, S.Kom., M.Kom.</option>
+                <option value="36">Fajar Baskoro, S.Kom., MT.</option>
+                <option value="37">Misbakhul Munir Irfan Subakti, S.Kom., M.Sc.</option>
+                <option value="38">Agus Budi Raharjo, S.Kom., M.Kom., Ph.D.</option>
+                <option value="39">MCI (Manajemen Cerdas Informasi)</option>
+                <option value="40">Prof. Drs. Ec. Ir. Riyanarto Sarno, M.Sc., Ph.D.</option>
+                <option value="41">Adhatus Solichah Ahmadiyah, S.Kom., M.Sc.</option>
+                <option value="42">Ratih Nur Esti Anggraini, S.Kom., M.Sc.,Ph.D.</option>
+                <option value="43">Nurul Fajrin Ariyani, S.Kom., M.Sc.</option>
+                <option value="44">Abdul Munif, S.Kom., M.Sc.</option>
+                <option value="45">Shintami Chusnul Hidayati, S.Kom., M.Sc., Ph.D</option>
+                <option value="46">Kelly Rossa Sungkono, S.Kom., M.Kom.</option>
+                <option value="47">PKT (Pemodelan dan Komputasi Terapan)</option>
+                <option value="48">Victor Hariadi, S.Si., M.Kom.</option>
+                <option value="49">Prof. Dr. Ir. Joko Lianto Buliali, M.Sc.</option>
+                <option value="50">Dr. Ahmad Saikhu, S.Si., MT.</option>
+                <option value="51">Dr. Bilqis Amaliah, S.Kom.,M.Kom.</option>
+                <option value="52">Arya Yudhi Wijaya, S.Kom, M.Kom.</option>
+              </select>
+
+              <div class="title"><a>Fakultas</a></div>
+              <select name="faculty" class="form-control" id="facultySelect">
+                  <option value="0">Pilih Fakultas</option>
+                  <option value="1">F-SCIENTICS</option>
+                  <option value="2">F-MARTECH</option>
+                  <option value="3">F-INDSYS</option>
+                  <option value="4">F-ELECTICS</option>
+                  <option value="5">F-CIVPLAN</option>
+                  <option value="6">F-CREABIZ</option>
+                  <option value="7">F-VOCATION</option>
+                </select>
+  
+                <div class="title"><a>Departmen</a></div>
+                <select name="department" class="form-control" id="departmentSelect">
+                  <option value="0">Pilih Departmen</option>
+                  <option value="1" class="faculty-1">Physics</option>
+                  <option value="2" class="faculty-1">Chemistry</option>
+                  <option value="3" class="faculty-1">Biology</option>
+                  <option value="4" class="faculty-1">Mathematics</option>
+                  <option value="5" class="faculty-1">Statistics</option>
+                  <option value="6" class="faculty-1">Acuatial Science</option>
+                  <option value="7" class="faculty-2">Naval Architecture and Shipbuilding Engineering</option>
+                  <option value="8" class="faculty-2">Marine Engineering</option>
+                  <option value="9" class="faculty-2">Ocean Engineering</option>
+                  <option value="10" class="faculty-2">Sea Trasnportation Engineering</option>
+                  <option value="11" class="faculty-2">Offshore Engineering</option>
+                  <option value="12" class="faculty-3">MEchanical Engineering</option>
+                  <option value="13" class="faculty-3">Chemical Engineering</option>
+                  <option value="14" class="faculty-3">Engineering Physics</option>
+                  <option value="15" class="faculty-3">Industrial and System Engineering</option>
+                  <option value="16" class="faculty-3">Materials and MEtallurgical Engineering</option>
+                  <option value="17" class="faculty-3">Food Engineering</option>
+                  <option value="18" class="faculty-4">Informatics</option>
+                  <option value="19" class="faculty-4">Information System</option>
+                  <option value="20" class="faculty-4">Information Technology</option>
+                  <option value="21" class="faculty-4">Electrical Engineering</option>
+                  <option value="22" class="faculty-4">Computer Engineering</option>
+                  <option value="23" class="faculty-4">Biomedical Engineering</option>
+                  <option value="24" class="faculty-5">Civil Engineering</option>
+                  <option value="25" class="faculty-5">Architecture</option>
+                  <option value="26" class="faculty-5">Environmental Engineering</option>
+                  <option value="27" class="faculty-5">Urban and Regional Engineering</option>
+                  <option value="28" class="faculty-5">Geomatics Engineering</option>
+                  <option value="29" class="faculty-5">Geophysics Engineering</option>
+                  <option value="30" class="faculty-6">Product Design</option>
+                  <option value="31" class="faculty-6">Business Management</option>
+                  <option value="32" class="faculty-6">Interior Design</option>
+                  <option value="33" class="faculty-6">Visual Communication Design</option>
+                  <option value="34" class="faculty-6">Development Studies</option>
+                  <option value="35" class="faculty-7">Civil Infrastructure Engineering</option>
+                  <option value="36" class="faculty-7">Industrial Mechanical Engineering</option>
+                  <option value="37" class="faculty-7">Automation Electronic Engineering</option>
+                  <option value="38" class="faculty-7">Industrial Chemical Engineering</option>
+                  <option value="39" class="faculty-7">Instrumentation Engineering</option>
+                  <option value="40" class="faculty-7">Business Statistics</option>
+                </select>
+
+            <input type="submit" value="Submit">
+          </form>
+    </section>
+</body>
+</html>

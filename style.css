@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+:root{
+    --main-font: 'Poppins', sans-serif; 
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;   
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(232, 209, 34);
+  margin-top: 2rem;
+  font-family: var(--main-font);
+  border: 2px solid rgb(232, 209, 34);
+  border-radius: 20px;
+  padding: 15px;
+  width: 90%; 
+  max-width: 600px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section form {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: var(--main-font);
+    padding: 40px;
+    border-style: solid;
+    border-color: rgb(232, 209, 34);
+    border-radius: 20px;
+    background: color #f9f9f9;
+    background-color: rgb(232, 209, 34);
+  }
+  
+  section input[type='text'],
+  section input[type='nrp'], section input[type='email'],
+  section textarea,
+  .form-control {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    border: solid;
+    border-color: rgb(143, 129, 20);
+    outline: none;
+    background: rgb(245, 245, 245);
+  }
+  
+  section input[type='text'],
+  section input[type='nrp'], section input[type='email'] {
+    height: 50px;
+  }
+
+  section input[type='submit']{
+    background-color: rgb(238, 230, 3);
+    font-family: var(--main-font);
+    font-weight: 500;
+    padding: 10px;
+    width: 100px;
+    border-radius: 10px;
+    border-color: rgb(143, 129, 20);
+  }
+  
+  section textarea {
+    height: 200px;
+  }
+
+  .title{
+    width: fit-content;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    /* background-color: red; */
+    font-size: 18px;
+    font-weight: 500;
+    font-family: var(--main-font);
+  }
